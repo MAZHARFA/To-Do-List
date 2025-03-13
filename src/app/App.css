@@ -104,7 +104,9 @@ button{
     align-items: center;
     max-width: 1000px;
   }
-  
+  ul {
+    list-style-type: none;
+  }
   .todo-list {
     min-width: 10%;
 

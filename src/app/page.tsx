@@ -30,7 +30,8 @@ export default function Todo() {
 
   const handleCheckTask = (index) => {
     // Implement the logic to mark the task as completed
-    console.log("Task completed", index);
+    setTask((prevTask) => {prevTask[index] = <strike>{prevTask[index]}</strike>; return [...prevTask]});
+    
   };
 
   return (
@@ -54,7 +55,7 @@ export default function Todo() {
               return (
                 <li key={index} className="Todo-items">
                   <span>{curTask}</span>
-                  <button className="check-btn" onClick={() => handleCheckTask(index)}>
+                  <button  className="check-btn" onClick={() => handleCheckTask(index)}>
                     <MdCheck />
                   </button>
                   <button className="delete-btn" onClick={() => handleDeleteTask(index)}>
