@@ -30,7 +30,8 @@ export default function Todo() {
 
   const handleCheckTask = (index) => {
    
-    setTask((prevTask) => {prevTask[index] = <s>{prevTask[index]}</s>; return [...prevTask]});
+    setTask((prevTask) => {prevTask[index] = <s>{prevTask[index]}</s>; 
+      return [...prevTask]});
     
   };
 
