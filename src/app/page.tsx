@@ -29,8 +29,8 @@ export default function Todo() {
   };
 
   const handleCheckTask = (index) => {
-    // Implement the logic to mark the task as completed
-    setTask((prevTask) => {prevTask[index] = <strike>{prevTask[index]}</strike>; return [...prevTask]});
+   
+    setTask((prevTask) => {prevTask[index] = <s>{prevTask[index]}</s>; return [...prevTask]});
     
   };
 
